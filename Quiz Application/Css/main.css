@@ -1,0 +1,156 @@
+*{
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #178582; 
+  --blue-color: #007bff;
+  --gold-color: #BFA181; 
+  --gray-color: #dfdfdf; 
+  --background-color1: #f5f5f5;
+  --background-color2: #1d2e42;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color:  var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--main-color);
+}
+
+.container {
+  background-color: #0A1828;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 85%;
+}
+
+.quizInfo label {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+select {
+  background-color: var(--main-color);
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+  select option {
+  background-color: #BFA181;
+  color: #0A1828;
+}
+
+.quizInfo p {
+  font-size: 18px;
+}
+
+.chosenCategory, .numberOfQuestion{
+  font-weight: bold;
+  color: var(--gold-color);
+}
+
+h2 {
+  color: var(--gold-color);
+}
+
+.answersArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-color);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.answer label {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+input[type="radio"] {
+  margin-right: 6px;
+}
+
+input[type="radio"]:checked + label{
+  color: #1d2e42;
+}
+
+button.send {
+  margin-top: 10px;
+  background-color: var(--main-color);
+  color: var(--gray-color);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-top: 1px solid var(--gray-color);
+  padding: 15px 15px 15px 0;
+}
+
+.theSpans {
+  flex-wrap: wrap;
+  margin-bottom:8px;
+}
+
+.theSpans span {
+  background-color: var(--gray-color);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom:8px;
+}
+
+.theSpans span.on{
+  background-color: var(--gold-color);
+}
+
+.countdown {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resutlt {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resutlt span{
+  font-weight: bold;
+}
+.resutlt span.bad{
+  color: #dc3545;
+}
+.resutlt span.good{
+  color: #28a745;
+}
+.resutlt span.perfect{
+  color: #007bff;
+}
+
+

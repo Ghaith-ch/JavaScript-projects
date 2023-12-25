@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--nödvändiga meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--För att kunna använda Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <!--länka till css file som vinns i samma folder-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Top 10 tracks</title>
+  </head>
+
+  <body>
+    <div id="container" class="container-fluid my-4"> <!--Div som är container till hela innehållet-->
+      <main>
+        <h1>select your favorite artist to see the top 10 tracks of him/her in descending order on Last.fm</h1>
+        <form > <!--Form som innhehåller select och button(search del kan vi säga)-->
+          <select id="select">
+            <option selected>Choose your favorite artist ..</option>
+            <option value="Madona">Madona</option>
+            <option value="Eminem">Eminem</option>
+            <option value="Selena Gomez">Selena Gomez</option>
+            <option value="Ariana Grande">Ariana Grande</option>
+            <option value="Kanye West">Kanye West</option>
+            <option value="Cher">Cher</option>
+            <option value="Lady Gaga">Lady Gaga</option>
+            <option value="Michael Jackson">Michael Jackson</option>
+            <option value="Frank Sinatra">Frank Sinatra</option>
+            <option value="Drake">Drake</option>
+            <option value="Zac Efron">Zac Efron</option>
+            <option value="Dove Cameron">Dove Cameron</option>
+            <option value="Bob Marley">Bob Marley</option>
+            <option value="Manu Chao">Manu Chao</option>
+            <option value="Amy Winehouse">Amy Winehouse</option>
+          </select> 
+          <button type="button" id="button">Go</button>
+        </form>
+        <div> <!--Div som innehåller unordered list-->
+          <ul class='list-group'> <!-- alla li som behövs kommer att läggas till genom js dom-->
+          </ul>
+        </div>
+      </main>
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>

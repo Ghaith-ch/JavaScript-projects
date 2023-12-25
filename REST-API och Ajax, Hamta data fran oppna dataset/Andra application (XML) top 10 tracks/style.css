@@ -1,0 +1,50 @@
+/*
+-här använder jag background shorthand.
+-jag behöver inte bakcground-color så jag skriver inte det.
+*/
+
+body {
+    background: url(images/Melodi.jpg) no-repeat center center fixed;
+    background-size: cover;  
+}
+
+main {
+    display: flex;
+    flex-direction: column; /*Jag vill att all elements kommer i vertical ordning så jag byter flex-direction från row till column */
+}
+
+/*
+Alla stylings namn förklara vilken eller vilka elements som kommer att påverkas på grund av denna styleing
+till exempel main h1 betyder header som finns i main
+*/
+
+main h1 {
+    background-color: #2D2926FF;
+    color: #8ADB8A;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+main form select, main form button {
+    width: 350px; 
+    height: 50px; 
+    border-radius: 20px; 
+    background-color: #2D2926FF;
+    color: #8ADB8A; 
+    font-size: 1.5rem;
+    border: none;
+}
+
+main form button {
+   width: 150px;
+   font-size: 1.5rem;
+}
+
+main form button:hover {
+    background-color: #8ADB8A;
+    color: #2D2926FF;
+ }
+
+main div {margin-top: 40px;}

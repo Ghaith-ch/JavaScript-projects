@@ -1,0 +1,400 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:  #e6e6e6;
+}
+
+hr{
+    border: 4px solid #eee;
+}
+
+.container {
+    margin: 20px auto;
+    position: relative;
+}
+
+.gameInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gameInfo .category {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.gameInfo .category span{
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #a96851	;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6dae53;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    margin: 15px auto;
+    display: flex;
+}
+
+.gameInfo button:hover {
+    background-color: #a96851;
+}
+
+.overlay-instructions {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+}
+
+.popup-box-instructions{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d8d7c3;
+    border: 1px solid #a96851;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1200;
+}
+
+.popup-box-instructions h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px;
+    color: #a96851;
+}
+
+.popup-box-instructions p {
+    font-size: 18px;
+}
+
+.popup-box-instructions span {
+    color: #5c4d4d;
+    font-size: 24px;
+}
+
+.popup-box-instructions span.close-button {
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    background-color: #a96851;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    color: #d8d7c3;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50%;
+}
+
+.gameContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #d8d7c3;
+}
+
+.keyboard.disable {
+    pointer-events: none;
+}
+
+.keyboard span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    background-color: #a96851;
+    color: #f2f1e7;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    border: 2px solid #f2f1e7;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.keyboard span.clicked {
+    pointer-events: none;
+    background-color: #5c4d4d;
+    opacity: 0.4;
+}
+
+.hangmanDraw {
+    height: 275px;
+    background-color: #f2f1e7;
+    padding: 15px;
+}
+
+.theDraw{
+    width: 70px;
+    height: 255px;
+    border-bottom: 4px solid #5c4d4d;
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+.theDraw:before{
+    content: " ";
+    position: absolute;
+    background-color:  #5c4d4d;
+    height: 100%;
+    width: 4px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+
+.theDraw .hang:before{
+    content: " ";
+    position: absolute;
+    background-color:  #5c4d4d;
+    height: 4px;
+    width: 90px;
+    top: 15px;
+    left: 35px;
+    display: none;
+}
+
+.theDraw .hang:after{
+    content: " ";
+    position: absolute;
+    background-color:  #5c4d4d;
+    height: 25px;
+    width: 4px;
+    top: 18px;
+    left: 121px;
+    display: none;
+}
+
+
+.theDraw .rope{
+    content: " ";
+    position: absolute;
+    border: 4px dashed #5c4d4d;
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    top: 39px;
+    left: 89px;
+    display: none;
+}
+
+.theDraw .head{
+    content: " ";
+    position: absolute;
+    border: 4px solid #5c4d4d;
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    top: 46px;
+    left: 97px;
+    display: none;
+}
+
+.theDraw .body{
+    content: " ";
+    position: absolute;
+    background-color:  #5c4d4d;
+    height: 115px;
+    width: 4px;
+    top: 97px;
+    left: 121px;
+    display: none;
+}
+
+
+.theDraw .hands::before,
+.theDraw .hands::after{
+    content: " ";
+    position: absolute;
+    background-color:  #5c4d4d;
+    height: 4px;
+    width: 50px;
+    top: 140px;
+    display: none;
+}
+
+.theDraw .hands::before{
+    left: 78px;
+    transform: rotate(30deg);
+}
+
+.theDraw .hands::after{
+    left: 120px;
+    transform: rotate(-30deg);
+}
+
+
+.theDraw .legs {
+    display: none;
+}
+
+
+.theDraw .legs::before,
+.theDraw .legs::after{
+    content: " ";
+    position: absolute;
+    background-color:  #5c4d4d;
+    height: 4px;
+    width: 50px;
+    top: 220px;
+}
+
+.theDraw .legs::before{
+    left: 78px;
+    transform: rotate(-30deg);
+}
+
+.theDraw .legs::after{
+    left: 120px;
+    transform: rotate(30deg);
+}
+
+.hangmanDraw.wrongNumber1 .theDraw{
+    display: block;
+}
+
+.hangmanDraw.wrongNumber2 .hang::before{
+    display: block;
+}
+
+.hangmanDraw.wrongNumber3 .hang::after{
+    display: block;
+}
+
+.hangmanDraw.wrongNumber4 .rope{
+    display: block;
+}
+.hangmanDraw.wrongNumber5 .head{
+    display: block;
+}
+.hangmanDraw.wrongNumber6 .body{
+    display: block;
+}
+
+.hangmanDraw.wrongNumber7 .hands::before{
+    display: block;
+}
+
+.hangmanDraw.wrongNumber8 .hands::after{
+    display: block;
+}
+
+.hangmanDraw.wrongNumber9 .legs{
+    display: block;
+}
+
+.wordDisplay {
+    background-color: #d8d7c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80px;
+}
+
+.wordDisplay span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    background-color: #a96851;
+    color: #f2f1e7;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    border-bottom: 4px solid #5c4d4d;
+    transition: 0.3s;
+}
+
+.wordDisplay span.space{
+    border-bottom: none;
+    position: relative;
+}
+
+.wordDisplay span.space::before{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 15px;
+    height: 4px;
+    background-color: #5c4d4d;
+}
+
+
+@media only screen and (min-width: 576px)  {
+    .container {
+        max-width: 720px;
+    }
+
+    .popup-box-instructions{
+        padding: 20px;
+    }
+
+    .gameContent {
+        flex-direction: row;
+    }
+
+    .keyboard{
+        width: 50%;
+        padding: 25px;
+    }
+
+    .keyboard span,
+    .wordDisplay span {
+        height: 45px;
+        width: 45px;
+        font-size: 25px;
+    }
+
+    .hangmanDraw {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 992px)  {
+    .container {
+        max-width: 960px;
+    }
+}
+

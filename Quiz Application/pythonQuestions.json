@@ -1,0 +1,114 @@
+[
+   {
+      "question":"What is the PEP in Python?",
+      "answer1":"Python Enhancement Proposal",
+      "answer2":"Python Execution Process",
+      "answer3":"Programming Environment Package",
+      "answer4":"Python Enhancement Processor",
+      "right_answer":"Python Enhancement Proposal"
+   },
+   {
+      "question":"Which function is used to print content to the console in Python?",
+      "answer1":"print()",
+      "answer2":"console.log()",
+      "answer3":"display()",
+      "answer4":"log()",
+      "right_answer":"print()"
+   },
+   {
+      "question":"What is a closure in Python?",
+      "answer1":"A block of code",
+      "answer2":"A function with no parameters",
+      "answer3":"A combination of function and lexical environment",
+      "answer4":"An array of strings",
+      "right_answer":"A combination of function and lexical environment"
+   },
+   {
+      "question":"How do you declare a constant variable in Python?",
+      "answer1":"var",
+      "answer2":"const",
+      "answer3":"let",
+      "answer4":"const var",
+      "right_answer":"const"
+   },
+   {
+      "question":"What does the 'self' keyword refer to in Python?",
+      "answer1":"The current function",
+      "answer2":"The global object",
+      "answer3":"The parent function",
+      "answer4":"The calling object",
+      "right_answer":"The calling object"
+   },
+   {
+      "question":"What is a decorator in Python?",
+      "answer1":"A design pattern",
+      "answer2":"A function that modifies the behavior of another function",
+      "answer3":"A Python script",
+      "answer4":"A data structure",
+      "right_answer":"A function that modifies the behavior of another function"
+   },
+   {
+      "question":"Which method is used to add a new element to the end of a list in Python?",
+      "answer1":"append()",
+      "answer2":"push()",
+      "answer3":"addToEnd()",
+      "answer4":"addElement()",
+      "right_answer":"append()"
+   },
+   {
+      "question":"What is the purpose of the 'with' statement in Python?",
+      "answer1":"To enable strict mode for the entire script",
+      "answer2":"To include external scripts",
+      "answer3":"To handle exceptions",
+      "answer4":"To create a context manager",
+      "right_answer":"To create a context manager"
+   },
+   {
+      "question":"What is the difference between '==' and '===' in Python?",
+      "answer1":"No difference, they are interchangeable",
+      "answer2":"Strict equality vs. loose equality",
+      "answer3":"Assignment operator vs. equality operator",
+      "answer4":"One is deprecated",
+      "right_answer":"Strict equality vs. loose equality"
+   },
+   {
+      "question":"Which event is triggered when a user clicks on a button in a GUI application?",
+      "answer1":"mouseover",
+      "answer2":"click",
+      "answer3":"keydown",
+      "answer4":"load",
+      "right_answer":"click"
+   },
+   {
+      "question":"What is the purpose of the 'async' keyword in Python?",
+      "answer1":"To declare a function as asynchronous",
+      "answer2":"To define a variable",
+      "answer3":"To import external libraries",
+      "answer4":"To handle exceptions",
+      "right_answer":"To declare a function as asynchronous"
+   },
+   {
+      "question":"How do you remove an element from the middle of a list in Python?",
+      "answer1":"removeElement()",
+      "answer2":"delete()",
+      "answer3":"pop()",
+      "answer4":"splice()",
+      "right_answer":"pop()"
+   },
+   {
+      "question":"What is the purpose of the 'requests' library in Python?",
+      "answer1":"To fetch data from a database",
+      "answer2":"To fetch external resources over the network",
+      "answer3":"To fetch local files",
+      "answer4":"To fetch user input",
+      "right_answer":"To fetch external resources over the network"
+   },
+   {
+      "question":"Which method is used to change the text content of an element in Python?",
+      "answer1":"setText()",
+      "answer2":"changeText()",
+      "answer3":"innerHTML",
+      "answer4":"textContent",
+      "right_answer":"textContent"
+   }
+]

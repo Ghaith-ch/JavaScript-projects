@@ -1,0 +1,83 @@
+[
+    {
+        "question": "What is the JIT compiler in C#?",
+        "answer1": "Just-In-Time compiler",
+        "answer2": "Java Integrated Tool",
+        "answer3": "JavaScript Interpreter",
+        "answer4": "Jumpy Inherited Type",
+        "right_answer": "Just-In-Time compiler"
+    },
+    {
+        "question": "What is the purpose of the 'var' keyword in C#?",
+        "answer1": "Declare a constant",
+        "answer2": "Implicitly type a variable",
+        "answer3": "Create a nullable type",
+        "answer4": "Define a static method",
+        "right_answer": "Implicitly type a variable"
+    },
+    {
+        "question": "Which of the following is a reference type in C#?",
+        "answer1": "int",
+        "answer2": "float",
+        "answer3": "char",
+        "answer4": "string",
+        "right_answer": "string"
+    },
+    {
+        "question": "What is the difference between '==' and 'Equals' in C# for comparing strings?",
+        "answer1": "No difference, they are interchangeable",
+        "answer2": "Value equality vs. reference equality",
+        "answer3": "One is deprecated",
+        "answer4": "None of the above",
+        "right_answer": "Value equality vs. reference equality"
+    },
+    {
+        "question": "How do you define a property in C#?",
+        "answer1": "Using the 'prop' code snippet",
+        "answer2": "Using the 'property' keyword",
+        "answer3": "By declaring a public field",
+        "answer4": "There is no property in C#",
+        "right_answer": "Using the 'prop' code snippet"
+    },
+    {
+        "question": "What is a delegate in C#?",
+        "answer1": "A reference type that represents methods with a specific signature",
+        "answer2": "A keyword for defining custom events",
+        "answer3": "An access modifier for classes",
+        "answer4": "A way to declare constants",
+        "right_answer": "A reference type that represents methods with a specific signature"
+    },
+    {
+        "question": "How is exception handling done in C#?",
+        "answer1": "Using the 'try-catch' block",
+        "answer2": "Using the 'handle-exception' statement",
+        "answer3": "By declaring a global exception variable",
+        "answer4": "There is no exception handling in C#",
+        "right_answer": "Using the 'try-catch' block"
+    },
+    {
+        "question": "What is LINQ in C#?",
+        "answer1": "A programming language",
+        "answer2": "A query language for collections",
+        "answer3": "A data type in C#",
+        "answer4": "An operating system",
+        "right_answer": "A query language for collections"
+    },
+    {
+        "question": "How do you define an interface in C#?",
+        "answer1": "Using the 'interface' keyword",
+        "answer2": "By declaring a class with abstract methods",
+        "answer3": "By extending a base class",
+        "answer4": "There is no interface in C#",
+        "right_answer": "Using the 'interface' keyword"
+    },
+    {
+        "question": "What is the purpose of the 'async' and 'await' keywords in C#?",
+        "answer1": "To define asynchronous methods",
+        "answer2": "To import external libraries",
+        "answer3": "To handle exceptions",
+        "answer4": "To declare global variables",
+        "right_answer": "To define asynchronous methods"
+    }
+ ]
+ 

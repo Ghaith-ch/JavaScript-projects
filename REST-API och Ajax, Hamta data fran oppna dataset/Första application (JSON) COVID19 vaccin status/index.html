@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+     <!--nödvändiga meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--För att kunna använda icons från font awesome webbplats-->
+    <script src="https://kit.fontawesome.com/c0a05c9348.js" crossorigin="anonymous"></script>
+
+    <!--För att kunna använda Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+   
+    <!--länka till css file som finns i samma folder-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <title>Check the vaccination status in your country</title>
+  </head>
+
+  <body>
+    <div id="container" class="container-fluid"> <!--Div som är container till hela innehållet-->
+      <main>
+        <div id="div_search" class="search">  <!--Div som är innehåller hela search delen-->
+          <h1>get an overview of vaccination status in your country!</h1>
+          <form id="form" class="input-group">
+            <input type="search" id="search" placeholder="First letter must be a capital, e.g Spain" class="form-control">
+            <button type="button" class="btn">Search <i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <div id="div_table" class="table-responsive"> <!--Div som är innehåller hela table delen-->
+          <table id="table" class="table">
+            <thead>
+              <tr>
+                <th>population</th>
+                <th>life expectancy</th>
+                <th>administered</th>
+                <th>people vaccinated</th>
+                <th>people partially vaccinated</th>
+                <th>last updated</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody> <!--tbody kommer att fyllas genom js dom-->
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

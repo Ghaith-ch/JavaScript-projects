@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Design</title>
+    <link rel="stylesheet" href="/Css/normalize.css">
+    <link rel="stylesheet" href="/Css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Start sitting Box -->
+    <div class="setting-box">
+        <div class="toggle-setting">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="setting-container">
+
+            <div class="box">
+                <h4>Color</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color = "#009B77" ></li>
+                    <li data-color = "#FF6F61" ></li>
+                    <li data-color = "#92A8D1" ></li>
+                    <li data-color = "#EFC050" ></li>
+                    <li data-color = "#9B2335" ></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h4>Random Backgrounds</h4>
+                <div class="random-back">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <h4>Show Bullets</h4>
+                <div class="bullets-option">
+                    <span class="yes active" data-display="block">Yes</span>
+                    <span class="no" data-display="none">No</span>
+                </div>
+            </div>
+
+            <button class="reset-options">Reset Options</button>
+        </div>
+    </div>
+    <!-- End sitting Box -->
+
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip">About Us</div>
+        </div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip">Our Skills</div>
+        </div>
+        <div class="bullet" data-section=".gallery">
+            <div class="tooltip">Our Gallery</div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+            <div class="tooltip">Timeline</div>
+        </div>
+        <div class="bullet" data-section=".features">
+            <div class="tooltip">Timeline</div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+            <div class="tooltip">Timeline</div>
+        </div>
+    </div>
+    <!-- End Nav Bullets -->
+
+    <!-- Strat Landing Page -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+
+        <div class="container">
+            <header>
+                <div class="logo">Ghaith Design</div>
+                <div class="links-container">
+                    <ul class="">
+                        <li><a href="#" data-section=".about-us">About</a></li>
+                        <li><a href="#" data-section=".skills">Skills</a></li>
+                        <li><a href="#" data-section=".gallery">Gallery</a></li>
+                        <li><a href="#" data-section=".timeline">Timeline</a></li>
+                        <li><a href="#" data-section=".features">Features</a></li>
+                        <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+                    </ul>
+                    <button class="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+        </div>
+
+        <div class="introduction-text">
+            <h1>We are <span>Creative</span> Agency</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, deserunt. Molestiae voluptate eveniet dignissimos quo</p>
+        </div>
+    </div>
+    <!-- End Landing Page -->
+
+    <!-- Start About us Page -->
+    <div class="container">
+        <div class="about-us">
+            <div class="info-box">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio nesciunt atque aliquam repudiandae rerum maxime dolorem eos modi odit id corporis doloribus officia iure, nemo ea, accusantium architecto natus.</p>
+            </div>
+            <div class="image-box">
+                <img src="./Images/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End About us Page -->
+
+    <!-- Start Our Skills -->
+    <div class="skills">
+        <div class="container">
+            <h2>Our Skills</h2>
+
+            <div class="skill-box">
+                <div class="skill-name">HTML</div>
+                <div class="skill-progress">
+                    <span data-progress="90%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-progress">
+                    <span data-progress="70%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">SQL</div>
+                <div class="skill-progress">
+                    <span data-progress="65%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">PHP</div>
+                <div class="skill-progress">
+                    <span data-progress="45%"></span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">C#</div>
+                <div class="skill-progress">
+                    <span data-progress="85%"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Our Skills -->
+
+    <!-- Start Gallery -->
+    <div class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="images-box">
+                <img src="Images/img1.jpg" alt="Image One">
+                <img src="Images/img2.jpg" alt="Image Two">
+                <img src="Images/img3.jpg" alt="Image Three">
+                <img src="Images/img4.jpg" alt="Image Four">
+                <img src="Images/img5.jpg" alt="Image Five">
+                <img src="Images/img6.jpg" alt="">
+                <img src="Images/img7.jpg" alt="">
+                <img src="Images/img8.jpg" alt="">
+                <img src="Images/img9.jpg" alt="">
+                <img src="Images/img10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery -->
+
+    <!-- Start Timeline -->
+    <div class="timeline">
+        <div class="container">
+
+            <div class="year">2018</div>
+            <div class="timeline-content">
+                <div class="left">
+                    <div class="content">
+                        <h3>Random Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore velit pariatur dolor nisi, quasi quaerat ducimus architecto, blanditiis ab ipsum, aspernatur amet quo cupiditate praesentium tenetur dolore! Maxime, quaerat tenetur?</p>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <div class="content">
+                        <h3>Random Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore velit pariatur dolor nisi, quasi quaerat ducimus architecto, blanditiis ab ipsum, aspernatur amet quo cupiditate praesentium tenetur dolore! Maxime, quaerat tenetur?</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Timeline -->
+
+    <!-- Start Features -->
+    <div class="features">
+        <h2>Our Features</h2>
+        <div class="container">
+            <div class="feature">
+                <img src="/Images/Icon_01.png" alt="">
+                <h4>Development</h4>
+                <p>Web development is the work involved in developing a website for the Internet</p>
+            </div>
+            <div class="feature">
+                <img src="/Images/Icon_02.png" alt="">
+                <h4>Development</h4>
+                <p>Web development is the work involved in developing a website for the Internet</p>
+            </div>
+            <div class="feature">
+                <img src="/Images/Icon_03.png" alt="">
+                <h4>Development</h4>
+                <p>Web development is the work involved in developing a website for the Internet</p>
+            </div>
+            <div class="feature">
+                <img src="/Images/Icon_04.png" alt="">
+                <h4>Development</h4>
+                <p>Web development is the work involved in developing a website for the Internet</p>
+            </div>
+            <div class="feature">
+                <img src="/Images/Icon_05.png" alt="">
+                <h4>Development</h4>
+                <p>Web development is the work involved in developing a website for the Internet</p>
+            </div>
+            <div class="feature">
+                <img src="/Images/Icon_06.png" alt="">
+                <h4>Development</h4>
+                <p>Web development is the work involved in developing a website for the Internet</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Start Tesimonials -->
+    <div class="testimonials">
+        <div class="container">
+            <h2>Tesimonials</h2>
+            <div class="ts-content">
+
+                <div class="ts-box">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto rem vel iste ducimus nihil?</p>
+                    <div class="person-info">
+                        <img src="/Images/tes-01.png" alt="">
+                        <h4>Ghaith Chikh</h4>
+                        <p>CEO At Company</p>
+                    </div>
+                </div>
+
+                <div class="ts-box">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto rem vel iste ducimus nihil?</p>
+                    <div class="person-info">
+                        <img src="/Images/tes-02.png" alt="">
+                        <h4>Ghaith Chikh</h4>
+                        <p>CEO At Company</p>
+                    </div>
+                </div>
+
+                <div class="ts-box">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto rem vel iste ducimus nihil?</p>
+                    <div class="person-info">
+                        <img src="/Images/tes-03.png" alt="">
+                        <h4>Ghaith Chikh</h4>
+                        <p>CEO At Company</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- End Tesimonials -->
+
+    <!-- Start Contact Us -->
+    <div class="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="username">
+                    <input type="number" placeholder="Your Phone" name="phone">
+                    <input type="email" placeholder="Your Email" name="email">
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start Footrer-->
+    <footer>
+        <div>Created By Ghaith Chikh Alchabab</div>
+    </footer>
+    <!-- End Footrer-->
+
+    <script src="/Js/main.js"></script>
+
+</body>
+</html>

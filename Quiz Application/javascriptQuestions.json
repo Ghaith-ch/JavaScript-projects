@@ -1,0 +1,154 @@
+[
+    {
+       "question":"What is the DOM in JavaScript?",
+       "answer1":"Document Object Model",
+       "answer2":"Data Object Model",
+       "answer3":"Digital Object Model",
+       "answer4":"Dynamic Object Model",
+       "right_answer":"Document Object Model"
+    },
+    {
+       "question":"Which function is used to print content to the console in JavaScript?",
+       "answer1":"console.print()",
+       "answer2":"log()",
+       "answer3":"print()",
+       "answer4":"display()",
+       "right_answer":"console.log()"
+    },
+    {
+       "question":"What is a closure in JavaScript?",
+       "answer1":"A block of code",
+       "answer2":"A function with no parameters",
+       "answer3":"A combination of function and lexical environment",
+       "answer4":"An array of strings",
+       "right_answer":"A combination of function and lexical environment"
+    },
+    {
+       "question":"How do you declare a constant variable in JavaScript?",
+       "answer1":"var",
+       "answer2":"const",
+       "answer3":"let",
+       "answer4":"const var",
+       "right_answer":"const"
+    },
+    {
+       "question":"What does the 'this' keyword refer to in JavaScript?",
+       "answer1":"The current function",
+       "answer2":"The global object",
+       "answer3":"The parent function",
+       "answer4":"The calling object",
+       "right_answer":"The calling object"
+    },
+    {
+       "question":"What is an IIFE in JavaScript?",
+       "answer1":"Immediately Invoked Function Expression",
+       "answer2":"Internal Iteration Function Execution",
+       "answer3":"Inline If-Else",
+       "answer4":"Instance of Function Expression",
+       "right_answer":"Immediately Invoked Function Expression"
+    },
+    {
+       "question":"Which method is used to add a new element to the end of an array in JavaScript?",
+       "answer1":"append()",
+       "answer2":"push()",
+       "answer3":"addToEnd()",
+       "answer4":"addElement()",
+       "right_answer":"push()"
+    },
+    {
+       "question":"What is the purpose of the 'use strict' directive in JavaScript?",
+       "answer1":"To enable strict mode for the entire script",
+       "answer2":"To include external scripts",
+       "answer3":"To disable strict mode",
+       "answer4":"To define global variables",
+       "right_answer":"To enable strict mode for the entire script"
+    },
+    {
+       "question":"What is the difference between '=='' and '===' in JavaScript?",
+       "answer1":"No difference, they are interchangeable",
+       "answer2":"Strict equality vs. loose equality",
+       "answer3":"Assignment operator vs. equality operator",
+       "answer4":"One is deprecated",
+       "right_answer":"Strict equality vs. loose equality"
+    },
+    {
+       "question":"Which event is triggered when a user clicks on an HTML element?",
+       "answer1":"mouseover",
+       "answer2":"click",
+       "answer3":"keydown",
+       "answer4":"load",
+       "right_answer":"click"
+    },
+    {
+       "question":"What is the purpose of the 'async' keyword in JavaScript?",
+       "answer1":"To declare a function as asynchronous",
+       "answer2":"To define a variable",
+       "answer3":"To import external libraries",
+       "answer4":"To handle exceptions",
+       "right_answer":"To declare a function as asynchronous"
+    },
+    {
+       "question":"How do you remove an element from the middle of an array in JavaScript?",
+       "answer1":"removeElement()",
+       "answer2":"delete()",
+       "answer3":"splice()",
+       "answer4":"pop()",
+       "right_answer":"splice()"
+    },
+    {
+       "question":"What is the purpose of the 'fetch' function in JavaScript?",
+       "answer1":"To fetch data from a database",
+       "answer2":"To fetch external resources over the network",
+       "answer3":"To fetch local files",
+       "answer4":"To fetch user input",
+       "right_answer":"To fetch external resources over the network"
+    },
+    {
+       "question":"Which method is used to change the text content of an HTML element in JavaScript?",
+       "answer1":"setText()",
+       "answer2":"changeText()",
+       "answer3":"innerHTML",
+       "answer4":"textContent",
+       "right_answer":"textContent"
+    },
+    {
+       "question":"What is the purpose of the 'localStorage' object in JavaScript?",
+       "answer1":"To store data on the server",
+       "answer2":"To store data in the browser's local storage",
+       "answer3":"To store data in cookies",
+       "answer4":"To store temporary data",
+       "right_answer":"To store data in the browser's local storage"
+    },
+    {
+       "question":"What does 'JS' stand for?",
+       "answer1":"JavaString",
+       "answer2":"JavaScript",
+       "answer3":"JustScript",
+       "answer4":"JungleScript",
+       "right_answer":"JavaScript"
+    },
+    {
+       "question":"What is the result of 2 + '2' in JavaScript?",
+       "answer1":"4",
+       "answer2":"22",
+       "answer3":"TypeError",
+       "answer4":"NaN",
+       "right_answer":"22"
+    },
+    {
+       "question":"What is the purpose of the 'typeof' operator in JavaScript?",
+       "answer1":"Check the type of a variable",
+       "answer2":"Define a variable",
+       "answer3":"Concatenate strings",
+       "answer4":"Multiply numbers",
+       "right_answer":"Check the type of a variable"
+    },
+    {
+       "question":"How do you comment in JavaScript?",
+       "answer1":"// This is a comment",
+       "answer2":"/* This is a comment */",
+       "answer3":"# This is a comment",
+       "answer4":"<!-- This is a comment -->",
+       "right_answer":"// This is a comment"
+    }
+ ]

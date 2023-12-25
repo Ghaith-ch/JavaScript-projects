@@ -1,0 +1,138 @@
+[
+   {
+       "question": "What is the JVM in Java?",
+       "answer1": "Java Virtual Machine",
+       "answer2": "JavaScript Virtual Machine",
+       "answer3": "Java Virtual Memory",
+       "answer4": "Java Virtual Model",
+       "right_answer": "Java Virtual Machine"
+   },
+   {
+       "question": "Which keyword is used to print content to the console in Java?",
+       "answer1": "system.print()",
+       "answer2": "log()",
+       "answer3": "print()",
+       "answer4": "System.out.println()",
+       "right_answer": "System.out.println()"
+   },
+   {
+       "question": "What is a class in Java?",
+       "answer1": "A block of code",
+       "answer2": "A function with no parameters",
+       "answer3": "A blueprint for objects",
+       "answer4": "An array of strings",
+       "right_answer": "A blueprint for objects"
+   },
+   {
+       "question": "How do you declare a constant variable in Java?",
+       "answer1": "var",
+       "answer2": "const",
+       "answer3": "final",
+       "answer4": "static",
+       "right_answer": "final"
+   },
+   {
+       "question": "What is the purpose of the 'this' keyword in Java?",
+       "answer1": "The current function",
+       "answer2": "The global object",
+       "answer3": "The parent class",
+       "answer4": "The calling object",
+       "right_answer": "The calling object"
+   },
+   {
+       "question": "What is an interface in Java?",
+       "answer1": "A design pattern",
+       "answer2": "A function with no body",
+       "answer3": "A contract for classes",
+       "answer4": "A data structure",
+       "right_answer": "A contract for classes"
+   },
+   {
+       "question": "Which method is used to add a new element to the end of an array in Java?",
+       "answer1": "append()",
+       "answer2": "push()",
+       "answer3": "addToEnd()",
+       "answer4": "addElement()",
+       "right_answer": "add()"
+   },
+   {
+       "question": "What is the purpose of the 'import' statement in Java?",
+       "answer1": "To enable strict mode for the entire script",
+       "answer2": "To include external scripts",
+       "answer3": "To import external classes",
+       "answer4": "To define global variables",
+       "right_answer": "To import external classes"
+   },
+   {
+       "question": "What is the difference between '==' and '===' in Java?",
+       "answer1": "No difference, they are interchangeable",
+       "answer2": "Strict equality vs. loose equality",
+       "answer3": "Assignment operator vs. equality operator",
+       "answer4": "One is deprecated",
+       "right_answer": "Strict equality vs. loose equality"
+   },
+   {
+       "question": "Which event is triggered when a user clicks on a button in a GUI application?",
+       "answer1": "mouseover",
+       "answer2": "click",
+       "answer3": "keydown",
+       "answer4": "load",
+       "right_answer": "click"
+   },
+   {
+       "question": "What is the purpose of the 'async' keyword in Java?",
+       "answer1": "To declare a function as asynchronous",
+       "answer2": "To define a variable",
+       "answer3": "To import external libraries",
+       "answer4": "To handle exceptions",
+       "right_answer": "None (Java does not have an 'async' keyword)"
+   },
+   {
+       "question": "How do you remove an element from the middle of an array in Java?",
+       "answer1": "removeElement()",
+       "answer2": "delete()",
+       "answer3": "remove()",
+       "answer4": "splice()",
+       "right_answer": "remove()"
+   },
+   {
+       "question": "What is the purpose of the 'try-catch' block in Java?",
+       "answer1": "To fetch data from a database",
+       "answer2": "To handle exceptions",
+       "answer3": "To fetch local files",
+       "answer4": "To fetch user input",
+       "right_answer": "To handle exceptions"
+   },
+   {
+       "question": "Which method is used to change the text content of an HTML element in Java?",
+       "answer1": "setText()",
+       "answer2": "changeText()",
+       "answer3": "innerHTML",
+       "answer4": "setTextContent()",
+       "right_answer": "setTextContent()"
+   },
+   {
+       "question": "What is the purpose of the 'HashMap' class in Java?",
+       "answer1": "To store data on the server",
+       "answer2": "To store key-value pairs",
+       "answer3": "To store data in cookies",
+       "answer4": "To store temporary data",
+       "right_answer": "To store key-value pairs"
+   },
+   {
+       "question": "What does 'J' stand for in 'Java'?",
+       "answer1": "JavaString",
+       "answer2": "JavaScript",
+       "answer3": "JustScript",
+       "answer4": "JungleScript",
+       "right_answer": "Java"
+   },
+   {
+       "question": "What is the result of 2 + '2' in Java?",
+       "answer1": "4",
+       "answer2": "22",
+       "answer3": "TypeError",
+       "answer4": "NaN",
+       "right_answer": "22"
+   }
+]

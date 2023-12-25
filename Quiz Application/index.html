@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quizInfo">
+          <label for="categoryDropdown">Quiz in:</label>
+          <select id="categoryDropdown">
+            <option value="" disabled selected> Choose a programming language</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+          </select>
+          <p>The category you have chosen is: <span class="chosenCategory"></span> and Questions count is: <span class="numberOfQuestion"></span></p>
+        </div>
+        <div class="quizQuestionArea"></div>
+        <div class="answersArea"></div>
+        <button class="send">Submit Answer</button>
+        <div class="bullets">
+          <div class="theSpans">
+          </div>
+          <div class="countdown">
+          </div>
+        </div>
+        <div class="resutlt"></div>
+    </div>
+    <script src="Js/main.js"></script>
+</body>
+</html>
