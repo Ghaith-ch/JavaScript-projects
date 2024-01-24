@@ -81,9 +81,6 @@ function prepGame() {
     div.appendChild(textNode);
     div.classList.add('ml-3', 'mt-2');
     form.insertBefore(div, button);
-
-
-
 }
 
 /**

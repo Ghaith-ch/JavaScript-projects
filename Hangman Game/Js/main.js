@@ -43,7 +43,7 @@ function generateLetters() {
 }
 
 async function getRandomWord() {
-  const wordCategoriesUrl = 'data.json'; // Replace with the actual path to your JSON file
+  const wordCategoriesUrl = 'data.json'; 
 
   const response = await fetch(wordCategoriesUrl);
   const data = await response.json();
@@ -202,7 +202,6 @@ function handleClick(chosenWord) {
         if (wrongCounter === 9) {
           console.log("lose");
           message("lose",chosenWord);
-
         }
       } else {
         // Play success sound
