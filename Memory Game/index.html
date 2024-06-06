@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/main.css">
+</head>
+<body>
+
+  <div class="startTheGame">
+    <div class="settings">
+      <p>Welcome to the memory game! Get ready to test and enhance your memory skills. You have 10 tries</p>
+      <form>
+        <input type="text" id="nameInput" placeholder="Write your name to play" required>
+        <select id="categorySelect" required>
+          <option value="" disabled selected>Select a category</option>
+          <option value="fruits">Fruits</option>
+          <option value="animals">Animals</option>
+          <option value="vegetables">Vegetables</option>
+        </select>
+        <button>Start The Game</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="infoSection">
+      <div class="name">
+        Hello: <span></span>
+      </div>
+      <div class="tries">
+        Wrong Tries: <span>0</span>
+      </div>
+    </div>
+    <div class="boxesSection">
+      <!-- Boxes will be dynamically generated here -->
+    </div>
+
+  </div>
+
+  <audio id="success" src="sounds/success.mp3" preload="auto"></audio>
+  <audio id="fail" src="sounds/fail.mp3" preload="auto"></audio>
+
+  <script src="Js/main.js"></script>
+</body>
+</html>

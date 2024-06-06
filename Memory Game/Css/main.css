@@ -1,0 +1,187 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #178582;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.startTheGame {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #E7E8D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startTheGame .settings {
+    background-color: #A7BEAE;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.startTheGame .settings p {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.startTheGame input,
+.startTheGame select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.startTheGame select {
+    cursor: pointer;
+}
+
+.startTheGame button {
+    background-color: #a76f6f;
+    color: #eee;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.startTheGame button:hover {
+    background-color: #7a4d4d;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .infoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #E7E8D1;
+    color: #333;
+    border: 2px solid #777;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container .boxesSection {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background-color: #A7BEAE;
+    border-radius: 5px;
+}
+
+.container .boxesSection.stopClicking {
+    pointer-events: none;
+}
+
+.boxesSection .aBox {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0;
+}
+
+.boxesSection .aBox .front,
+.boxesSection .aBox .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.boxesSection .aBox .front {
+    background-color: #a76f6f;
+    line-height: 200px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.boxesSection .aBox .back {
+    background-color: #E7E8D1;
+    transform: rotateY(180deg);
+}
+
+.boxesSection .aBox .back img {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+}
+
+.boxesSection .aBox.flipped,
+.boxesSection .aBox.matched {
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 480px) {
+    .boxesSection .aBox {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 768px) {
+    .boxesSection .aBox {
+        flex: 1 1 calc(33.333% - 10px);
+        max-width: calc(33.333% - 10px);
+    }
+
+    .container .infoSection {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+    .boxesSection .aBox {
+        flex: 1 1 calc(25% - 10px);
+        max-width: calc(25% - 10px);
+    }
+}
