@@ -1,6 +1,8 @@
 # Tic Tac Toe Spelet
 
 Välkommen till Tic Tac Toe-spelet! Ett klassiskt spel där du tävlar mot en vän för att få tre markeringar i rad.
+För att se till att allt flyter på smidigt och du får en problemfri upplevelse, kom ihåg att öppna projektet med en live server.
+
 
 ## Hur man spelar
 
