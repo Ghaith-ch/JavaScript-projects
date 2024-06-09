@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">Speed Typing Challenge</h1>
+        <div class="controls">
+            <p>Choose your level:</p>
+            <select>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div class="message">
+            You Are Playing On
+            <span class="level">easy</span> Level
+            & You Have <span class="seconds">130</span> Seconds To Type all words
+        </div>
+        <button class="start-btn">Start Playing</button>
+        <div class="word-display"></div>
+        <input type="text" class="word-input" placeholder="Type here...">
+        <div class="upcoming-words"></div>
+        <div class="stats">
+            <span>Time Left: <span class="time-value"></span> seconds</span>
+            <span>Score: <span class="score-value">0</span> / <span class="total-words"></span></span>
+        </div>
+        <button class="how-to-play-btn">How to Play</button>
+    </div>
+
+    <div class="how-to-play-div">
+        <h2>How to Play</h2>
+        <ul>
+            <li>Select a difficulty level.</li>
+            <li>Click "Start Playing" to begin the game.</li>
+            <li>A word will be displayed.</li>
+            <li>Type the word as quickly as possible in the input field.</li>
+            <li>Type the same number of letters as the displayed word to proceed to the next word, regardless of correctness.</li>
+            <li>Try to type as many words as you can within the given time.</li>
+            <li>Your score will be displayed under and at the end of the game.</li>
+        </ul>
+        <button class="close-btn">Close</button>
+    </div>
+
+    <div class="result-main">
+        <h2>Your Score</h2>
+        <p class="score-text">You scored <span class="final-score"></span> out of <span class="total-score"></span> words.</p>
+        <div class="play-again">
+            <button class="play-again-btn">Play Again </button>
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+:root {
+    --first-color: #00796b;
+    --second-color:#ff5722;
+    --third-color:#004d40;
+    --white-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaeff2;
+}
+
+.main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.main .controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main .controls p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.main .controls select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--first-color);
+    border-radius: 4px;
+    outline: none;
+    background-color: #e0f2f1;
+}
+
+.main .message {
+    text-align: center;
+    font-size: 16px;
+    color: var(--first-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.main .message .level,
+.main .message .seconds {
+    font-weight: 700;
+    color: var(--second-color);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.main .start-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.main .start-btn:hover {
+    background-color: var(--third-color);
+}
+
+.main .word-display {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--second-color);
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.main input[type="text"] {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid var(--first-color);
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: #e0f2f1;
+    text-align: center;
+    caret-color: var(--first-color);
+}
+
+.main .upcoming-words {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main .upcoming-words div {
+    display: inline-block;
+    background-color: #b2dfdb;
+    color: var(--first-color);
+    font-weight: 700;
+    margin: 4px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+.main .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main .how-to-play-btn {
+    padding: 8px 16px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.main .how-to-play-btn.disabled {
+    background-color: rgba(0, 0, 0, 0.1); 
+    color: rgba(255, 255, 255, 0.5); 
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.main .how-to-play-btn:hover {
+    background-color: var(--third-color);
+}
+
+.how-to-play-div {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.how-to-play-div h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.how-to-play-div ul {
+    margin: 20px;
+}
+
+.how-to-play-div .close-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.how-to-play-div .close-btn:hover {
+    background-color: var(--third-color);
+}
+
+.result-main {
+    display: none;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.result-main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.result-main p span{
+    font-weight: bold;
+    color: var(--first-color);
+    font-size: 20px;
+}
+
+.result-main .play-again-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.result-main .play-again-btn:hover {
+    background-color: var(--third-color);
+}
