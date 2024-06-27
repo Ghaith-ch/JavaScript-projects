@@ -1,0 +1,570 @@
+/* General styles */
+*{
+  box-sizing: border-box;
+}
+
+:root {
+  --orange-color: #ff8362; 
+  --hover-color:#592f0d;
+  --darkBlue-color: #3c4663;
+  --white-color: #fff; 
+  --gray-color: #f0f2f5; 
+  --blue-color: #4a90e2;
+  --green-color: #45a049;
+  --greenHover-color: #45a049;
+  --red-color: #f44336;
+  --redHover-color: #d32f2f;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: var(--gray-color);
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+header {
+  background-color: var(--darkBlue-color);
+  color: var(--white-color);
+  padding: 15px 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .left,
+header .right {
+  display: flex;
+  align-items: center;
+}
+
+header .left a:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+header .left a,
+header .right button {
+  color: var(--white-color);
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+header .right .user-info {
+  display: none;
+  align-items: center;
+  margin-right: 15px; 
+  cursor: pointer;
+}
+
+header .right .user-info img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+header .right .user-info span {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--white-color); 
+}
+
+header .right button {
+  background-color: var(--orange-color);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+header .right button:hover {
+  background-color: var(--hover-color);
+}
+
+.post {
+  background: var(--white-color);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.post .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post .user .user-p-n {
+  display: flex;
+  align-items: center;
+}
+
+.post .user .user-p-n .profile-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.post .user .name {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--blue-color);
+}
+
+.post .user button {
+  color: var(--white-color);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.post .user .edBtn {
+  background-color: var(--green-color);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.post .user .edBtn:hover {
+  background-color: var(--greenHover-color);
+  transform: scale(1.1); 
+}
+
+.post .user .deletBtn {
+  background-color: var(--red-color);
+  transition: background-color 0.3s, transform 0.3s;
+  margin-left: 5px;
+}
+
+.post .user .deletBtn:hover {
+  background-color: var(--redHover-color);
+  transform: scale(1.1); 
+}
+
+.post .post-image {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post .date {
+  color: #999;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.post .title {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.post .content {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.post hr {
+  background-color: #999;
+  height: 2px;
+  border: none;
+}
+
+.post .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post .footer .comments {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.post .footer .comments::before {
+  content: "\1F4AC"; 
+  margin-right: 5px;
+}
+
+.post .footer .comments .comments-number {
+  margin-right: 5px;
+}
+
+.post .footer .tags {
+  display: flex;
+}
+
+.post .footer .tags span {
+  background-color: #e0f7fa; 
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-right: 5px;
+  color: #006064;
+}
+
+
+/* Shared modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h1 {
+  font-size: 22px;
+  color: var(--blue-color);
+}
+
+.modal-content p {
+  font-size: 18px;
+  color: var(--red-color);
+}
+
+/* Form styling */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form .modalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"],
+.modal-content textarea,
+.modal-content button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  max-height: 120px; 
+}
+
+
+/* Style for the file input label in registration and post modals */
+.modal-content label[for="userImage"],
+.modal-content label[for="postImage"] {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; 
+  display: block;
+}
+
+/* Style the file input field */
+.modal-content input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.modal-content input[type="file"]::file-selector-button {
+  background-color: var(--orange-color); 
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-content input[type="file"]::file-selector-button:hover {
+  background-color: #e57357;
+}
+
+/* Specific button styles */
+.modal-content button.closeBtn,
+#deleteModal .deleteFormBtn 
+{
+  background-color: var(--red-color); 
+  color: var(--white-color);
+}
+
+.modal-content button.closeBtn:hover,
+#deleteModal .deleteFormBtn:hover {
+  background-color: var(--redHover-color); 
+}
+
+.modal-content button.formBtn {
+  background-color: var(--green-color); 
+  color: var(--white-color);
+}
+
+.modal-content button.formBtn:hover {
+  background-color: var(--greenHover-color); 
+}
+
+/* Additional styles for the delete modal */
+.modal-content .deleteTitle {
+  color: var(--red-color); 
+  font-size: 22px;
+}
+
+#deleteModal .deleteCloseBtn
+{
+  background-color: #888; 
+  color: var(--white-color);
+}
+
+#deleteModal .deleteCloseBtn:hover {
+  background-color: #555; 
+}
+
+.addPostbtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ff8362;
+  color: white;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.addPostbtn:hover {
+  background-color: var(--hover-color); 
+  transform: scale(1.1); 
+}
+
+
+/* Styles for postDetails.html */
+.main-post {
+  margin: auto;
+  padding: 20px;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-post .postDetail h2 {
+  color: var(--blue-color);
+}
+
+.main-post .postDetail .author-details {
+  display: flex;
+  align-items: center;
+
+}
+
+.main-post .postDetail .author-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.main-post .postDetail .author-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #555;
+}
+
+.main-post .postDetail > img {
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.main-post .postDetail .date {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.main-post .postDetail .post-body {
+  margin: 8px 0px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+/* Styles for comments */
+.main-post .comments-section {
+  margin-top: 20px;
+}
+
+.main-post .comment {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.main-post .comment .comment-author {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.main-post .comment .comment-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px; 
+}
+
+.main-post .comment .comment-author h4 {
+  color:var(--blue-color)
+}
+
+.main-post .comment .comment-body {
+  color: #555;
+  font-size: 16px;
+}
+
+
+.add-comment-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.add-comment-section textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical; 
+  height: 60px; 
+  max-height: 80px; 
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.add-comment-section button {
+  width: fit-content;
+  font-size: 18px;
+  padding: 10px;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-comment-section button:hover {
+  background-color: var(--hover-color);
+}
+
+
+/* Styles for profile.html */
+section {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+}
+
+.profile-card .profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: 5px solid #666;
+}
+
+.profile-card .profile-info h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.profile-card .profile-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.profile-post {
+  flex: 1;
+}
+
+.profile-post p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-post span{
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+}

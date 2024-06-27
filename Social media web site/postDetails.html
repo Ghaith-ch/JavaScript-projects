@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page-id="postDetail">
+    <div class="container">
+        <header>
+            <div class="left">
+                <a href="index.html">Social Media</a>
+                <a href="index.html">Home</a>
+                <a href="" class="profile-link">Profile</a>
+            </div>
+            <div class="right">
+                <div class="user-info" id="userInfo">
+                    <img id="userPhoto" src="https://via.placeholder.com/40x40" alt="User Image">
+                    <span id="userNameHeader">User Name</span>
+                </div>
+                <button id="loginBtn">Login</button>
+                <button id="registerBtn" class="register">Register</button>
+            </div>
+        </header>
+        <main class="main-post">
+            <!-- Post will be dynamically inserted here -->
+        </main>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h1>Login</h1>
+            <p></p>
+            <form>
+                <input type="text" id="username" placeholder="Enter your User Name">
+                <input type="password" id="password" placeholder="Enter your password">
+                <div class="modalButtons">
+                    <button type="button" class="formBtn loginFormBtn">Login</button>
+                    <button type="button" class="closeBtn loginCloseBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <h1>Register</h1>
+            <p></p>
+            <form>
+                <input type="text" id="registerName" placeholder="Enter your Name">
+                <input type="text" id="registerUsername" placeholder="Enter your Username">
+                <input type="password" id="registerPassword" placeholder="Enter your Password">
+                <label for="userImage">Upload your photo here:</label>
+                <input type="file" id="userImage" accept="image/jpeg, image/png, image/gif">
+                <div class="modalButtons">
+                    <button type="button" class="formBtn registerFormBtn">Register</button>
+                    <button type="button" class="closeBtn registerCloseBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Post Modal -->
+    <div id="addPostModal" class="modal">
+        <div class="modal-content">
+            <h1>Add Post</h1>
+            <p></p>
+            <form>
+                <input type="text" id="postTitle" placeholder="Enter post title">
+                <textarea id="postBody" placeholder="Enter post body"></textarea>
+                <label for="postImage">Upload post image here:</label>
+                <input type="file" id="postImage" accept="image/jpeg, image/png, image/gif">
+                <div class="modalButtons">
+                    <button type="button" class="formBtn addPostFormBtn">Create</button>
+                    <button type="button" class="closeBtn addPostCloseBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <h1>Delete Post</h1>
+            <p>Are you sure that you want to delete this post?</p>
+            <div class="modalButtons">
+                <button type="button" class="formBtn deleteFormBtn">Yes, Delete</button>
+                <button type="button" class="closeBtn deleteCloseBtn">No, Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <button id="addPostBtn" class="addPostbtn">+</button>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    
+    <script src="Js/main.js"></script>
+    <script src="Js/details.js"></script>
+</body>
+</html>
