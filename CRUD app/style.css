@@ -1,0 +1,252 @@
+:root {
+  --first-color: #254336;
+  --second-color: #6B8A7A;
+  --third-color: #B7B597;
+  --forth-color: #dad3bea0;
+  --white-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--forth-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--third-color);
+  border: 2px solid var(--second-color);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px; 
+}
+
+.head {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.head h1 {
+  color: var(--first-color);
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.head p {
+  color: var(--second-color);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input:focus,
+.outputs .searchDiv input:focus {
+  background-color: var(--forth-color);
+  outline: 2px solid var(--first-color);
+  outline-offset: 3px;
+}
+
+.inputs input[type="text"],
+.inputs input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--second-color);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.inputs .price {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.inputs .price input {
+  flex: 1;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.inputs .price span {
+  display: block;
+  align-self: center;
+  font-size: 22px;
+  background-color: #912626;
+  width: fit-content;
+  color: var(--white-color);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.inputs button,
+.outputs .deleteAllBtn,
+.outputs .searchDiv .btnsSearch button {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.inputs button:hover,
+.outputs .deleteAllBtn:hover,
+.outputs .searchDiv .btnsSearch button:hover {
+  background-color: var(--second-color);
+}
+
+.outputs {
+  background-color: var(--third-color);
+  border: 2px solid var(--second-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.outputs .searchDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.outputs .searchDiv input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--second-color);
+  border-radius: 5px;
+}
+
+.outputs .searchDiv .btnsSearch {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.outputs table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  margin: 20px auto;
+}
+
+.outputs table th,
+.outputs table td {
+  border: 1px solid var(--second-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.outputs table th {
+  background-color: var(--second-color);
+  color: var(--white-color);
+}
+
+.outputs table tbody tr:nth-child(odd) {
+  background-color: var(--forth-color);
+}
+
+.outputs table tbody tr:hover {
+  background-color: var(--second-color);
+  color: var(--white-color);
+}
+
+.outputs table button {
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.outputs table button:hover {
+  background-color: var(--second-color);
+}
+
+/* Media Queries for Responsiveness */
+/* Media Query for Phones (max-width: 600px) */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  .inputs .price input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .outputs .searchDiv .btnsSearch {
+    flex-direction: column;
+  }
+
+  .outputs .searchDiv .btnsSearch button {
+    margin-bottom: 10px;
+  }
+
+  .outputs table {
+    display: block;
+  }
+
+  /* Adjust other styles for phones as needed */
+}
+
+/* Media Query for Tablets and Laptops (min-width: 601px) and (max-width: 1024px) */
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+  .inputs .price input {
+    width: calc(50% - 10px);
+  }
+
+  .outputs .searchDiv .btnsSearch button {
+    flex: 1;
+    margin-right: 5px;
+  }
+
+  .outputs table {
+    display: block;
+  }
+
+  /* Adjust other styles for tablets and laptops as needed */
+}
+
+/* Media Query for Large Screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .container {
+    width: 80%;
+  }
+
+  .inputs .price input {
+    width: calc(25% - 10px);
+  }
+
+  .outputs .searchDiv .btnsSearch button {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  /* Adjust other styles for large screens as needed */
+}
