@@ -1,0 +1,134 @@
+:root {
+  --first-color: #e7e8d17d;   
+  --second-color: #252523cd;     
+  --third-color:  #A7BEAE; 
+  --forth-color: #dfd8c8; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--second-color); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 20px;
+  background-color: var(--first-color); 
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.imgBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.imgBox .box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  max-height: 570px;
+}
+
+.imgBox .box img,
+.imgBox .box canvas{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.upload label{
+  display: block;
+  background-color: var(--second-color);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--forth-color);
+  border: 2px #fff dotted;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.upload input{
+  display: none;
+}
+
+.filtersBox {
+  padding: 10px;
+  background-color: var(--forth-color);
+  border-radius: 8px;
+}
+
+.filtersBox ul {
+  list-style: none;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.filtersBox ul li {
+  margin-bottom: 15px;
+}
+
+
+.filtersBox ul li label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--second-color);
+}
+
+.filtersBox ul li input[type='range'] {
+  width: 100%;
+}
+
+.filtersBox ul li:last-child {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.filtersBox ul li a,
+.filtersBox ul li span {
+  background-color: var(--second-color);
+  padding: 8px;
+  color: var(--forth-color);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filtersBox ul li a {
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%; /* Full width on smaller screens */
+    padding: 15px; /* Adjust padding as needed */
+    margin: 10px; /* Adjust margin as needed */
+  }
+
+}
