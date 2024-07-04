@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drag drop app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <form id="task-form">
+            <input type="text" placeholder="New Task..." id="task-input">
+            <button class="add">Add +</button>
+            <button class="delete-all">Delete All</button> 
+        </form>
+
+        <div class="task-lanes">
+
+            <div class="lane" id="todo-lane">
+                <h3 class="lane-title">To Do</h3>
+                <div class="task-list">
+                </div>
+            </div>
+            <div class="lane" id="doing-lane">
+                <h3 class="lane-title">Doing</h3>
+                <div class="task-list">
+                </div>
+            </div>
+            <div class="lane" id="done-lane">
+                <h3 class="lane-title">Done</h3>
+                <div class="task-list">
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
