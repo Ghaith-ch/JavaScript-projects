@@ -19,7 +19,7 @@ function search(search_input_value,table_body) {
     table_body.innerHTML = ''; //tömma tbody element för att man kan söka annat land om hen vill
 
     //anrop till angiven url för att hämta vaccination information till land som användare har angett i förra steget 
-    window.fetch('https://covid-api.mmediagroup.fr/v1/vaccines?country=' + encodeURIComponent(search_input_value))
+    window.fetch('https://cors-anywhere.herokuapp.com/https://covid-api.mmediagroup.fr/v1/vaccines?country=' + encodeURIComponent(search_input_value))
     .then(function(response) {    //fetch anrop retunerar promis objekt som fullbordas med response objekt
                                   //och then betyder om jag får godkänd svar från fetch
         return response.json();   //hämta json delen av response
