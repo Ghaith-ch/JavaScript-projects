@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
         console.log(select_value);
 
         //anrop till angiven url för att hämta tracks till artist som användare har valt i förra steget 
-        window.fetch('http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=' + encodeURIComponent(select_value)+ '&api_key=e2281d3a7af1724cfeec91c61686a560')
+        window.fetch('https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=' + encodeURIComponent(select_value)+ '&api_key=e2281d3a7af1724cfeec91c61686a560')
         .then(function(response) {      //fetch anrop retunerar promis objekt som fullbordas med response objekt
                                         //och then betyder om jag får godkänd svar från fetch
             return response.text();     //vi får bodyn i svaret som en sträng (vi har nu alltså en text fil)
